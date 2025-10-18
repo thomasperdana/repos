@@ -1,0 +1,35 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+
+# Node / front-end (safe defaults even if not used now)
+node_modules/
+.npm/
+.pnpm-store/
+.yarn/
+yarn.lock
+package-lock.json
+pnpm-lock.yaml
+
+# Editors
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# Logs and temporary files
+*.log
+*.tmp
+.tmp/
+
+# Build artifacts
+/dist/
+/build/
+.cache/
+
