@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thomas Perdana — About Me</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg: #070B14;
+      --bg-2: #0B1224;
+      --ink: #EAF0FF;
+      --muted: #9BB0FF;
+      --primary: #5B8CFF;
+      --accent: #22D3EE;
+      --card: rgba(255,255,255,0.06);
+      --border: rgba(255,255,255,0.12);
+      --shadow: 0 10px 30px rgba(0,0,0,0.35);
+      --radius: 18px;
+      --radius-lg: 26px;
+    }
+
+    *{ box-sizing:border-box }
+    html,body{ height:100% }
+    body{
+      margin:0; color:var(--ink); background:
+        radial-gradient(1200px 800px at 10% -10%, #12204A 0%, transparent 60%),
+        radial-gradient(1000px 700px at 120% 10%, #1B2A66 0%, transparent 60%),
+        linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%);
+      font-family:'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      line-height:1.65;
+      overflow-x:hidden;
+    }
+
+    .container{ width: min(1100px, 92vw); margin: 0 auto }
+
+    header.appbar{
+      position:sticky; top:0; z-index:100; /* sticky nav bar */
+      backdrop-filter:saturate(180%) blur(14px);
+      background: rgba(7, 11, 20, 0.9);
+      border-bottom:1px solid var(--border);
+    }
+    .appbar-inner{ display:flex; align-items:center; justify-content:space-between; padding:14px 0 }
+    .brand{ display:flex; gap:12px; align-items:center }
+    .logo{ width:38px; height:38px; border-radius:50%; background:linear-gradient(135deg, #204bff, #22d3ee); display:grid; place-items:center; box-shadow: var(--shadow) }
+    nav a{
+      color:var(--muted); text-decoration:none; margin-left:20px; font-weight:600; letter-spacing:.2px
+    }
+    nav a:hover{ color:white }
+  </style>
+</head>
+<body>
+  <header class="appbar">
+    <div class="container appbar-inner">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"><span>T</span></div>
+        <strong>Thomas Perdana</strong>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#timeline">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+</body>
+</html>
